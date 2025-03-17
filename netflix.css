@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+
+
+.backgroundContainer {
+    background-image: url("./net_banner.jpg");
+    filter: blur(16px);
+    height: 100vh;
+    position: relative;
+}
+
+.pinkoverlay {
+    background-color: rgba(165, 25, 49, 0.432);
+    height: 100%;
+    width: 100;
+    opacity: 30%;
+}
+
+.contentContainer {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0rem 2rem;
+    /*  1rem top_n_botton, 2rem left_n_right */
+}
+
+nav {
+    /* border: 2px solid green; */
+    height: 20vh;
+}
+
+.uppernavbar {
+    /* border: 2px solid blue; */
+    display: flex;
+    height: 50%;
+}
+
+.lowernavbar {
+    /* border: 2px solid red; */
+    color: #fff;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menulist {
+    /* border: 2px solid green; */
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.636);
+    box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.5);
+    height: 5.5vh;
+}
+
+.menulist li {
+    /* border: 2px solid red; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.uppernavbarleft {
+    /* border: 2px solid red; */
+    width: 50%;
+}
+
+.nlogo {
+    width: 29%;
+}
+
+.uppernavbarright {
+    /* border: 2px solid green; */
+    width: 50%;
+
+}
+
+.navbarbuttoncontainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 2px dashed green; */
+    height: 100%;
+}
+
+.languagebutton {
+    display: flex;
+    padding: .4rem .8rem;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.signButton {
+    background-color: #fff;
+    border-radius: 50px;
+    padding: .4rem .8rem;
+    border: none;
+    outline: none;
+    margin-left: 8px;
+    font-size: 1rem;
+}
+
+.languagebutton p {
+    margin-left: 5px;
+}
+
+.bannerSection {
+    /* border: 2px solid red; */
+    height: 90vh;
+    background-image: url("./net_banner.jpg");
+    background-size: 100% 100%;
+    border-radius: 20px;
+    margin-top: .5rem;
+    position: relative;
+
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0.3, 0, 0, 0.7), rgba(0, 0, 0, 0.7), black);
+    border-radius: 20px;
+
+}
+
+.bannerContainer {
+    /* border: 2px solid red; */
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerContainer h2 {
+    font-size: 4rem;
+    /* border: 3px solid green; */
+    width: 50%;
+    text-align: center;
+}
+
+.bannerContainer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.bannerContainer p {
+    font-size: 1rem;
+    margin: 20px;
+}
+
+.inputcontainer {
+    /* border: 2px solid green; */
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.emailinput {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: .3px solid white;
+    outline: none;
+    width: 60%;
+    background-color: rgba(255, 255, 255, .3);
+    font-size: 1rem;
+}
+
+.emailinput::placeholder {
+    color: #fff;
+}
+
+.getstartedbtn {
+
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    width: 30%;
+    background-color: red;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.crouselSection,
+.planSection,
+.reasonToJoin,
+.faqSection {
+    /* border: 2px solid red; */
+    color: white;
+}
+
+.crouselSection h2,
+.planSection h2,
+.reasonToJoin h2,
+.faqSection h {
+    /* border: 2px solid red; */
+    margin-left: 5rem;
+    font-size: 2.2rem;
+}
+
+.crouselcardContainer,
+.plansContainer,
+.reasonContainer,
+.faqCardsContainer {
+    /* border: 2px solid green; */
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+}
+
+.crouselCard {
+    /* border: 2px solid yellow; */
+    width: 12%;
+    height: 40vh;
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.crouselNumber {
+    position: absolute;
+    left: -25px;
+}
+
+.crouselImage {
+    width: 90%;
+    height: 100%;
+}
+
+.crouselImage img {
+    width: 95%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+
+.crouselNumber span {
+    color: rgba(0, 0, 0, 0.8);
+    -webkit-text-stroke: 0.125rem rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.planCard,
+.reasonCard {
+    /* border: 2px solid green; */
+    height: 38vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem 1rem;
+    border-radius: 20px;
+
+}
+
+.planCard h2 {
+    margin-left: 0;
+    font-size: 1.5rem;
+}
+
+.planCard h4 {
+    font-size: 1.3rem;
+}
+
+.planCard p {
+    font-size: 1rem;
+}
+
+.planCard1 {
+    background: linear-gradient(149deg, #1c4072 6.96%, #172b47 40.17%, #120c1f 73.39%);
+}
+
+.planCard2 {
+    background: linear-gradient(149deg, #1d529d 6.9%, #233371 40.1%, #120c1f 73.39%);
+}
+
+.planCard3 {
+    background: linear-gradient(149deg, #792a95 6.96%, #38216c 40.17%, #120c1f 73.39%);
+}
+
+.planCard4 {
+    background: linear-gradient(149deg, #922556 6.96%, #391945 40.17%, #120c1f 7373.39%);
+}
+
+.reasonCard {
+    background: #1e1e1e;
+    border: none;
+    height: 33vh;
+}
+
+.reasonCard h2 {
+    font-size: 1.5rem;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.reasonCard p {
+    font-size: 1rem;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.reasonCardlowerContent {
+    display: flex;
+    justify-content: end;
+}
+
+.reasonCardlowerContent svg {
+    height: 50px;
+    width: 50px;
+}
+
+.faqCard {
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+.faqQuestion,
+.faqAnswer {
+    padding: 2rem;
+    border-radius: 10px;
+    /* border: 1px solid white; */
+    margin-bottom: 20px;
+    background-color: #2e2e2e;
+}
+
+.faqQuestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqQuestion span {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.faqAnswer {
+    display: none;
+
+}
+
+.faqCard:hover {
+    cursor: pointer;
+}
+
+/* Jab faqQuestion p hover ho toh faqAnswer dikh jaye */
+.faqCard:hover .faqAnswer {
+    display: block;
+    cursor: pointer;
+}
+
+.faqCardsContainer {
+    flex-direction: column;
+}
+
+.getStartedSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.getStartedSection p {
+    margin-bottom: 1rem
+}
